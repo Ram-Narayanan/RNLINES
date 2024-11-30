@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sample.master.cs" Inherits="RN_LINE.Sample" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <aside>
+            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Home</asp:LinkButton>
+        </aside>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <footer class="bg-dark text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: <a href="mailto:info@shippingliner.com" class="text-white">info@shippingliner.com</a></p>
+                    <p>Address: 123 Ocean Drive, Harbor City, ST 12345</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/about" class="text-white">About Us</a></li>
+                        <li><a href="/services" class="text-white">Services</a></li>
+                        <li><a href="/tracking" class="text-white">Tracking</a></li>
+                        <li><a href="/faqs" class="text-white">FAQs</a></li>
+                        <li><a href="/careers" class="text-white">Careers</a></li>
+                        <li><a href="/blog" class="text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                        <li><a href="#" class="text-white">LinkedIn</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p class="mb-0">Copyright © 2024 Shipping Liner Inc. All Rights Reserved.</p>
+                    <p class="mb-0"><a href="/privacy" class="text-white">Privacy Policy</a> | <a href="/terms" class="text-white">Terms of Service</a> | <a href="/refund" class="text-white">Refund Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+    </form>
+</body>
+</html>
